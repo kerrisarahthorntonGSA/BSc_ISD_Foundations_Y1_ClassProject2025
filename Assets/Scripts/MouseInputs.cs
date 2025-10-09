@@ -4,8 +4,8 @@ public class MouseInputs : MonoBehaviour
 {
     // This script will look at Mouse Inputs
 
-    //public GameObject objToEnable;
-    public Color clickedColorChange;
+    public GameObject objToEnable;
+    public Color clickedColorChange; // this is a variable
 
     Renderer rend; //Makes an instance of the renderer component of this script to access it
     void Start()
@@ -22,8 +22,8 @@ public class MouseInputs : MonoBehaviour
     void OnMouseDown() //this is a method that is part of Unity's Libraries/Monobehaviour
     {
         Debug.Log("LeftMouse Button Clicked and is Green");
-       //objToEnable.SetActive(true);
-       rend.material.color = Color.green;//changes the color of the material to green using the variable we assigned earlier
+       objToEnable.SetActive(true);
+       rend.material.color = clickedColorChange;//changes the color of the material to green using the variable we assigned earlier
 
     }
 
