@@ -601,6 +601,7 @@ GameObject:
   - component: {fileID: 613799039}
   - component: {fileID: 613799038}
   - component: {fileID: 613799037}
+  - component: {fileID: 613799042}
   m_Layer: 0
   m_Name: Sphere With Gravity
   m_TagString: Untagged
@@ -724,6 +725,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &613799042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613799036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d688309cad031f44f87a54f7c741e5da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objToEnable: {fileID: 1867685411}
+  clickedColorChange: {r: 0.110137045, g: 0.9339623, b: 0.64794105, a: 0}
 --- !u!1 &732798513
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,13 +955,14 @@ GameObject:
   - component: {fileID: 1867685414}
   - component: {fileID: 1867685413}
   - component: {fileID: 1867685412}
+  - component: {fileID: 1867685416}
   m_Layer: 0
   m_Name: Sphere Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &1867685412
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1036,6 +1052,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1867685416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867685411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a696c7a822ee04e9f5dacee0777977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1915771551
 PrefabInstance:
   m_ObjectHideFlags: 0

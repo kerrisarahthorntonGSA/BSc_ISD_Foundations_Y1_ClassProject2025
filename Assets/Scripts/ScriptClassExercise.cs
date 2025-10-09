@@ -32,7 +32,20 @@ I will put a few methods down and you can help me work them out together in clas
             transform.Translate(0,-1,0); 
             Debug.Log("Down Arrow is pressed and the position is " + transform.position);
         }
+           if(Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Translate(1,0,0); 
+            Debug.Log("Left Arrow is pressed and the position is " + transform.position);
+        }
+        
+        if(Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Translate(-1,0,0); 
+            Debug.Log("Right Arrow is pressed and the position is " + transform.position);
+        }
     }
+
+    
 
 
 

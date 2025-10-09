@@ -4,10 +4,14 @@ public class MouseInputs : MonoBehaviour
 {
     // This script will look at Mouse Inputs
 
-    public GameObject objToEnable;
+    public GameObject objToEnable; //this is a variable
     public Color clickedColorChange; // this is a variable
+    Color dodgerBlue = new Color(0.1176471f, 0.5647059f, 1f, 1f);
+    
 
     Renderer rend; //Makes an instance of the renderer component of this script to access it
+
+
     void Start()
     {
        rend = GetComponent<Renderer>(); 
@@ -16,14 +20,14 @@ public class MouseInputs : MonoBehaviour
 
     void Update()
     {
-        
+        KerriCustomMouseMethod();
     }
 
     void OnMouseDown() //this is a method that is part of Unity's Libraries/Monobehaviour
     {
-        Debug.Log("LeftMouse Button Clicked and is Green");
+        Debug.Log("LeftMouse Button Clicked");
        objToEnable.SetActive(true);
-       rend.material.color = clickedColorChange;//changes the color of the material to green using the variable we assigned earlier
+       rend.material.color = dodgerBlue; //;//changes the color of the material to green using the variable we assigned earlier
 
     }
 
@@ -31,7 +35,7 @@ public class MouseInputs : MonoBehaviour
     {
         if(Input.GetAxis("Mouse X")<0)//we are using operaters <==> to tell the system the values
         {
-            Debug.Log("Mouse is movig to the left");
+            Debug.Log("Mouse is moving to the left");
         }
         if(Input.GetAxis("Mouse X")==0) // == assigns a value
         {
@@ -39,7 +43,7 @@ public class MouseInputs : MonoBehaviour
         }
         if(Input.GetAxis("Mouse X")>0)
         {
-            Debug.Log("Mouse is movig to the right");
+            Debug.Log("Mouse is moving to the right");
         }
     }
 }
