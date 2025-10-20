@@ -100,7 +100,7 @@ public class ScriptClassExerciseNavigation : MonoBehaviour
     {
          if(Input.GetKey(KeyCode.UpArrow))
         {
-            //transform.Translate(0,1,0);//old way of moving - moves 1 unit per frame 
+            transform.Translate(transform.forward*mySpeed*Time.deltaTime, Space.World);//old way of moving - moves 1 unit per frame 
             Debug.Log("Up Arrow is pressed and the position is " + transform.position);
         }
         
@@ -111,7 +111,7 @@ public class ScriptClassExerciseNavigation : MonoBehaviour
         }
            if(Input.GetKey(KeyCode.LeftArrow))
         {
-            //transform.Translate(1,0,0);//old way of moving - moves 1 unit per frame  
+            transform.Translate((-1)*transform.right*mySpeed*Time.deltaTime, Space.World);//old way of moving - moves 1 unit per frame  
             Debug.Log("Left Arrow is pressed and the position is " + transform.position);
         }
         
