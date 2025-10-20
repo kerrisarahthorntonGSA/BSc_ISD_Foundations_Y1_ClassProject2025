@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FoundationsUI.unity
     guid: d4ab076e02d944b439766332e596c49c
+  - enabled: 1
+    path: Assets/Scenes/Kerri_UI.unity
+    guid: d17eb3edc0c5f4549a33b4069fed9bb1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
