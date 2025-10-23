@@ -11,7 +11,8 @@ Watch out - for on mouse down method to work our object also needs to have a col
 public class OnClickAnimations : MonoBehaviour
 {
 
-    public Animator thisAnimator; //this is us storing an animator type object in memory in the script and assigning a variable name
+    public Animator thisAnimator;
+     //this is us storing an animator type object in memory in the script and assigning a variable name
    
     void Start()
     {
