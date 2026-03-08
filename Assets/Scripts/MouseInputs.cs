@@ -21,6 +21,7 @@ public class MouseInputs : MonoBehaviour
     void Update()
     {
         KerriCustomMouseMethod();
+        
     }
 
     void OnMouseDown() //this is a method that is part of Unity's Libraries/Monobehaviour
@@ -44,6 +45,9 @@ public class MouseInputs : MonoBehaviour
         if(Input.GetAxis("Mouse X")>0)
         {
             Debug.Log("Mouse is moving to the right");
+            
+    
         }
+
     }
 }
