@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class AccessScriptTest : MonoBehaviour
 {
-    /* This Script will access our PublicVarMethods script to get the daat/method we want
+    /* This Script will access our PublicVarMethods script to get the data/method we want
 
     To do this, we need to do some things. If you recall in our Animator Script, we needed
     to store the type of Animator as a variable in the script? 
@@ -27,7 +27,7 @@ public class AccessScriptTest : MonoBehaviour
 
     public GameObject myDataObject;//this is the game object our data script will be attached to
 
-    PublicVarMethod myPVMScript;//this is how you create an instsnce of a class in your script
+    PublicVarMethod myPVMScript;//this is how you create an instance of a class in your script
 
     void Start()
     {
@@ -38,6 +38,11 @@ public class AccessScriptTest : MonoBehaviour
     void Update()
     {
         myPVMScript.myConsoleTest();//this will run the method from our other script and Print a line in the console
-        
+
+    }
+
+    void OnMouseDown()
+    {
+        myPVMScript.myColorChange();
     }
 }
