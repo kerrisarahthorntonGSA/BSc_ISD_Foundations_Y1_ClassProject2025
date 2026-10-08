@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "BSc_ISD_Foundations_Y1_ClassProject2025.sln"
+    "dotnet.defaultSolution": "BSc_ISD_Foundations_Y1_ClassProject2025.slnx"
 }
