@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 1126906788}
   - component: {fileID: 1126906787}
   - component: {fileID: 1126906786}
-  - component: {fileID: 1126906791}
+  - component: {fileID: 1126906792}
   m_Layer: 0
   m_Name: Movement_Cube
   m_TagString: Untagged
@@ -397,7 +397,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1126906791
+--- !u!114 &1126906792
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -406,9 +406,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1126906785}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2a696c7a822ee04e9f5dacee0777977, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fb20c3b13c1d2a4e9cb7fbbde194467, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ScriptClassExercise
+  m_EditorClassIdentifier: Assembly-CSharp::RBNav
+  speed: 10
 --- !u!1 &1751864641
 GameObject:
   m_ObjectHideFlags: 0
