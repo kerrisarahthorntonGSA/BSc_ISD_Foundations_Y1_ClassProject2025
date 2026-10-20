@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 33965690}
   - component: {fileID: 33965689}
   - component: {fileID: 33965688}
+  - component: {fileID: 33965692}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -145,7 +146,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33965687}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: e440473001200bc48b8e7f073c14e98c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -225,12 +226,39 @@ Transform:
   m_GameObject: {fileID: 33965687}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 266.75, y: 1.19, z: 182.09}
+  m_LocalPosition: {x: 271, y: 4.07, z: 181.11}
   m_LocalScale: {x: 2.0165, y: 2.0165, z: 2.0165}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &33965692
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33965687}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &351708632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1147,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2873651633210209344, guid: 4fdb0e35cc5066541b2b21816992c9f1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873651633210209344, guid: 4fdb0e35cc5066541b2b21816992c9f1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2873651633210209344, guid: 4fdb0e35cc5066541b2b21816992c9f1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.38
+      objectReference: {fileID: 0}
     - target: {fileID: 2873651633210209344, guid: 4fdb0e35cc5066541b2b21816992c9f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 265.20856
